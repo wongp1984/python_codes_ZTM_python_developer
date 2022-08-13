@@ -14,4 +14,4 @@ def show_tree(emp, fill):
             astr=astr+emp if x==0 else astr+fill
         print(astr)
 
-show_tree(' ', '^')
+show_tree(fill='^', emp=' ')
