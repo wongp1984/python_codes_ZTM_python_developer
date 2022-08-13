@@ -1,0 +1,1 @@
+docker run -it --rm --name my-running-script -v %CD%:/usr/src/myapp -w /usr/src/myapp python python %1
