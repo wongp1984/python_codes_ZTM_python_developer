@@ -7,8 +7,11 @@ picture = [
   [0,0,0,1,0,0,0]
 ]
 
-for row in picture:
-  str = ''
-  for x in row:
-    str=str+' ' if x==0 else str+'*'
-  print(str)
+def show_tree(emp, fill):
+    for row in picture:
+        astr = ''
+        for x in row:
+            astr=astr+emp if x==0 else astr+fill
+        print(astr)
+
+show_tree(' ', '^')
