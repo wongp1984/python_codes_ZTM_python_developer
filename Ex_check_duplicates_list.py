@@ -8,5 +8,5 @@ for x in some_list:
 print(dup_list)
 
 # modified to use comprehension of the list
-dup_list2 = list[set{[ch for ch in some_list if some_list.count(ch) > 1]}]
+dup_list2 = list(set([ch for ch in some_list if some_list.count(ch) > 1]))
 print(dup_list2)
