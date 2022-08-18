@@ -1,6 +1,7 @@
 from collections import Counter, defaultdict, OrderedDict
 from array import array
 import datetime
+from pathlib import path
 import time
 
 #user Counter to get a dict with key as the element and val as the counter of the key inside an iterable
@@ -35,3 +36,9 @@ print(datetime.date.today)
 arr = array('i', [1,2,3])
 print(arr)
 print(arr[1])
+
+# pathlib is a common library to manipulate files and dirs across Windows and POSIX file systems
+from pathlib import Path
+p = Path('..')
+filelst = [x for x in p.iterdir() if x.is_file()]
+print(filelst)
